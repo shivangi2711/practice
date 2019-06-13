@@ -1,0 +1,14 @@
+.buttons{
+margin-left:30%
+}
+input[type=submit], input[type=reset]{
+color:white;
+border-radius:10px;
+padding:20px;
+background-color:black;
+margin-left:5%
+}
+.buttons:hover{
+border-radius:10px;
+color:white;
+}

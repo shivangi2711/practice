@@ -1,0 +1,113 @@
+<html>
+
+   <head>
+      <title>Form</title>
+   </head>
+	
+   <body>
+
+       <h3 align="center"> STUDENT DETAILS </H3>
+      <form action="file:///C:/Users/Dell/Desktop/home_page.html">
+         First name: <input type = "text" id="fn" name = "first_name" /><br>
+         Last name: <input type = "text" id="ln" name = "last_name" /> <br>
+         Gender: <input type = "radio" id="m"name = "male" value = "on"> Male
+         <input type = "radio" id="f"name = "female" value = "on"> Female
+         <input type = "radio" id="o"name = "other" value = "on"> Other <br>
+         DOB: <input type = "date" id="d"name = "dob" /> <BR>
+         Age:<input type="text" id="a" name="age" /> <br>
+         <P> Qualification: </p>
+         <table border="2"  cellpadding="3"width="60%" >
+         
+  <tr>
+    <th align="left">Class</th>
+    <th>Board</th> 
+    <th>Year of passing</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><input type = "text" name = "board" />
+    <td><input type = "text" name = "year" />
+    <td><input type = "text" name = "percentage" />
+    
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><input type = "text" name = "board" />
+    <td><input type = "text" name = "year" />
+    <td><input type = "text" name = "percentage" />
+    
+  </tr>
+</table>
+<br><br>
+
+         Desired course: <select name = "dropdown" id="dropbox">
+            <option value = "B.Tech." selected>B.Tech.</option>
+            <option value = "BA">BA</option>
+            <option value = "BBA">BBA</option>
+            <option value = "BHM">BHM</option>
+            <option value = "BSC">BSC</option>
+            <option value = "BJMC">BJMC</option>
+            <option value = "LLB">LLB</option>
+            <option value = "MBBS">MBBS</option>
+         </select> <br><br>
+          <textarea name="aim" rows="10" cols="50">Your aim:</textarea><br><br>
+           <input type="submit" name="submit" onclick="FormSubmit()" value="Submit"/>
+           <input type="reset" name="Reset" value="Reset"/><br><br>
+<img src="C:\Users\Dell\Downloads\classroom.jpg" float="right" width="300" height="200"><br><br>
+<table border="2"  cellpadding="3" cellspacing="0" align="center" width=30%>
+<tr>
+<td> first name</td>
+<td></td>
+</tr>
+<tr>
+<td> last name</td>
+<td></td>
+<tr>
+<td> gender </td>
+<td></td>
+</tr>
+<tr>
+<td> dob </td>
+<td></td>
+</tr>
+<tr>
+<td> age </td>
+<td></td>
+</tr>
+<tr>
+<td> desired course </td>
+<td></td>
+</table>
+
+      </form>
+
+   </body>
+	<script>
+function FormSubmit(){
+alert('tet');
+var fname =document.getElementById('fn').value;
+localStorage.setItem('text1',fname);
+alert(localStorage.getItem("text1"));
+
+var lname =document.getElementById('ln').value;
+localStorage.setItem('text2',lname);
+alert(localStorage.getItem("text2"));
+
+var genderm =document.getElementById('m').value;
+localStorage.setItem('text3',genderm);
+alert(localStorage.getItem("text3"));
+
+var genderf =document.getElementById('f').value;
+localStorage.setItem('text4',genderf)
+var gendero =document.getElementById('o').value;
+localStorage.setItem('text5',gendero)
+var dob =document.getElementById('d').value;
+localStorage.setItem('text6',dob)
+var age =document.getElementById('a').value;
+localStorage.setItem('text7',age)
+var course =document.getElementById('dropbox').value;
+localStorage.setItem('text8',course)
+}
+</script>
+</html>

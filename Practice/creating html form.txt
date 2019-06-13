@@ -1,0 +1,84 @@
+<html>
+
+   <head>
+      <title>Form</title>
+   </head>
+	
+   <body>
+
+       <h3 align="center" color="blue"> STUDENT DETAILS </H3>
+      <form >
+         First name: <input type = "text" name = "first_name" id="fn"/><br>
+         Last name: <input type = "text" name = "last_name" id="ln"/> <br>
+         Gender: <input type = "checkbox" name = "male" value = "on" id="m"> Male
+         <input type = "checkbox" name = "female" value = "on" id="f"> Female
+         <input type = "checkbox" name = "other" value = "on" id="o"> Other <br>
+         DOB: <input type = "TEXT" name = "dob" id="d"/> <BR>
+         <P> Qualification: </p>
+         <table width="50">
+         
+  <tr>
+    <th align="left">Class</th>
+    <th>Board</th> 
+    <th>Year of passing</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><input type = "text" name = "board" />
+    <td><input type = "text" name = "year" />
+    <td><input type = "text" name = "percentage" />
+    
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><input type = "text" name = "board" />
+    <td><input type = "text" name = "year" />
+    <td><input type = "text" name = "percentage" />
+    
+  </tr>
+</table>
+
+
+         Desired course: <select name = "dropdown">
+            <option value = "B.Tech." selected>B.Tech.</option>
+            <option value = "BA"></option>
+            <option value = "BBA">BBA</option>
+            <option value = "BHM">BHM</option>
+            <option value = "BSC">BSC</option>
+            <option value = "BJMC">BJMC</option>
+            <option value = "LLB">LLB</option>
+            <option value = "MBBS">MBBS</option>
+         </select> <br>
+           <button type="submit" name="submit" id="Submit" onclick="function1()"> Submit </button>
+           <input type="reset" name="Reset" value="Reset"/>
+<img src="C:\Users\Dell\Downloads\classroom.jpg" width="300" height="200">
+<script>
+function function1(){
+
+alert('call');
+
+var fname =document.GetElementById("fn").value;
+localstorage.setItem("text1",fname);
+alert(localstorage.getItem("text1"));
+
+var lname =document.GetElementById("ln").value;
+localstorage.setItem("text2",lname);
+alert(localstorage.getItem("text2"));
+
+var genderm =document.GetElementById("m").value;
+localstorage.setitem("text3",genderm);
+alert(localstorage.getItem("text3"));
+
+var genderf =document.GetElementById("f").value;
+localstorage.setItem("text4",genderf)
+var gendero =document.GetElementById("o").value;
+localstorage.setItem("text5",gendero)
+var dob =document.GetElementById("d").value;
+localstorage.setItem("text6",dob)
+</script>
+ </form>
+
+   </body>
+	
+</html>

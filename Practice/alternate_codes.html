@@ -1,0 +1,63 @@
+<button class="buttons button1"><b> SUBMIT</b></BUTTON>
+
+
+input[type=text],input[type=email],input[type=date],select,textarea{
+text-align:center;
+border: 3px inset gray;
+border-radius:20px;
+padding:10px;
+margin-left:30%
+}
+.buttons{
+margin-left:30%
+}
+input[type=submit], input[type=reset]{
+color:white;
+border-radius:10px;
+padding:20px;
+background-color:black;
+margin-left:5%
+}
+.buttons:hover{
+border-radius:10px;
+color:white;
+}
+
+<div class="buttons">
+<input type="submit" onclick="FormSubmit()" name="submit" value="Submit">
+<input type="reset" name="reset" value="Reset">
+<a href="file:///F:/Office%20work/Practice/new%20form.html"> <input type="submit" name="go" value="<- Go back to previous page"></a>
+</div>
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+
+
+<center><button type="submit" onclick="myfunction()"> Login </button>
+
+function dofirst(){
+var button= document.getElementById("button").value;
+button.addEventListener("click", FormSubmit, false);
+} 
+
+window.addEventListener("load", dofirst, false);
+
+var rightbox = document.getElementById("rightbox").value;
+var two =document.getElementById('fn').value;

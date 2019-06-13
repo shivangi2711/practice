@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Login page </title>
+<style>
+table,tr,td  {
+  border-collapse: collapse;
+}
+table, td, tr {
+  border: 1px solid black;
+}
+
+</style>
+</head>
+<body bgcolor="linen">
+<form action="file:///C:/Users/Dell/Desktop/home_page.html">
+<h3 align="center" > ENTER USER ID & PASSWORD </h3>
+<table  align=center cellpadding="5" >
+<tr>
+<td>User ID: </td> 
+<td><input type="text" id="txtUserName" name="id" size=40/></td>
+</tr><br><br>
+<td>Password: </td> 
+<td><input type="password" id="txtPassword" name="pwd" size=40 /></td>
+</tr><br><br>
+</table><br><br>
+<center><button type="submit" onclick="myfunction()"> Login </button>
+<script>
+function myfunction(){
+
+var userName = document.getElementById('txtUserName').value;
+var password = document.getElementById('txtPassword').value;
+if(userName=="shivangi" && password=="2711"){
+}
+else
+{
+alert('Invalid username or password!');
+}
+}
+</script>
+</form>
+</body>
+</html>

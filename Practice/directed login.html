@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Directed Login page </title>
+<style>
+#h1{background-image:url(a.jpg); color:black; font-family:serif;width:95%; height:10%; padding:40px }
+td{height:100px; vertical-align:right}
+ul{
+list-style:none;
+}
+ul li{
+float:right;
+width:10%;
+margin-top:-20px;
+text-align:center;
+}
+
+
+.box{
+margin:60px 550px 10px 550px;
+box-shadow: 10px 10px 5px grey;
+border:1px solid white;
+border-radius:10px;
+background-color:white;
+padding:20px;
+}
+h3{
+text-align:center;
+font-family:ceriz;
+font-size:2em;
+font-color:rgb(52, 73, 94);
+background-color:rgb(136, 243, 82);
+padding:6px;
+}
+.box1{
+text-align:center;
+}
+input[type=text],input[type=password]{
+border:2px inset gray;
+border-radius:20px;
+padding:5px;
+}
+
+.button{
+border:2px solid rgb(136, 243, 82);
+border-radius:5px;
+background-color:rgb(136, 243, 82);
+padding:6px;
+text-align:center;
+margin-left:170px;
+cursor:pointer;
+}
+.button:hover{
+opacity:0.7
+}
+.button1{
+color:black;
+border-radius:8px;
+background-color:rgb(136, 243, 82);
+margin:10px;
+padding:10px
+}
+.button1:hover{
+
+button-radius:4px;
+color:white;
+}
+ /* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+.footer{
+  text-align:center;
+  background-color:rgb(66, 65, 65);
+  color:white;
+  font-size:22px;
+  padding:20px;
+}
+</style>
+</head>
+<body bgcolor="linen">
+<h1 style="font-family:verdana;margin-left:5%; color:blue;">Kurento <span style="color:dodgerblue">Media Server</span>
+<ul>
+<li><a href="file:///F:/Office%20work/Practice/new%20form.html">Home</a></li>
+<li><a href="file:///F:/Office%20work/Practice/directed%20contact_us.html">Contact</a></li>
+<li><a href="file:///F:/Office%20work/Practice/directed%20faq.html">FAQ</a></li>
+<li><a href="file:///F:/Office%20work/Practice/directed%20login.html">LogIn</a></li>
+</ul>
+</h1><br>
+<h2 id="h1" align=center> Windows Distribution Of <u> Kurento Media Server</u> 6.7.1<br><br><button> DOWNLOAD</button><a href="file:///F:/Office%20work/Practice/directed%20contact_us.html"><button> CONTACT US</button></a></h2>
+<p style="background-color:teal; COLOR:black; text-align:center;padding:30px"> <b>We have ported Kurento Media Server to the Microsoft Windows platform and offer tested and stable distributions for it.</b></p> 
+
+<div class="box">
+<h3>SignIn</h3>
+<br><br>
+<div class="box1">
+<b>Username:</b><br>
+<input type="text" name="Text" id="txtUserName" >
+<br><br>
+<b>Password:</b><br>
+<input type="password" name="Password" id="txtPassword"><br><br>
+</div><br>
+
+<button class="button" onclick="myfunction()"> LogIn</button>
+</div><br><br><br><br>
+<center><a href="file:///F:/Office%20work/Practice/new%20form.html" class="button1"> &laquo;  Go back to previous page</a></center><br><br>
+<div class="footer">
+    <i> Reach us directly at~<br>2627<BR> Johari Bazar, M.S.B. Ka Rasta, 4th crossing<br>JAIPUR (RAJ.) </i>
+  </div>
+</body>
+
+
+
+<script>
+function myfunction(){
+
+var userName = document.getElementById('txtUserName').value;
+var password = document.getElementById('txtPassword').value;
+if(userName=="shivangi" && password=="2711"){
+}
+else
+{
+alert('Invalid username or password!');
+}
+}
+</script>
+
+</html>
+

@@ -1,0 +1,53 @@
+contact.slice(1);
+
+(3) [{…}, {…}, {…}]0: {fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}1: {fullname: "ff", email: "y", continent: "EUROPE", message: "frv", date: "2019-06-20"}2: {fullname: "gg", email: "z", continent: "EUROPE", message: "hgb", date: "2019-06-20"}length: 3__proto__: Array(0)
+contact.slice(2);
+
+(2) [{…}, {…}]0: {fullname: "ff", email: "y", continent: "EUROPE", message: "frv", date: "2019-06-20"}1: {fullname: "gg", email: "z", continent: "EUROPE", message: "hgb", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact.splice(2);
+
+(2) [{…}, {…}]0: {fullname: "ff", email: "y", continent: "EUROPE", message: "frv", date: "2019-06-20"}1: {fullname: "gg", email: "z", continent: "EUROPE", message: "hgb", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact.splice(2,1);
+
+[]length: 0__proto__: Array(0)
+contact.splice(2,2);
+
+[]
+contact;
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: " ewdc", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact[0]
+{fullname: "dd", email: "w", continent: "EUROPE", message: " ewdc", date: "2019-06-20"}
+contact[1]
+{fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}
+contact[0].message = "asdf"
+"asdf"
+contact
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact.find(i=>i.email='w')
+{fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}
+contact
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact[10]
+undefined
+contact[1]
+{fullname: "ee", email: "x", continent: "EUROPE", message: "fdv", date: "2019-06-20"}
+contact[1].message
+"fdv"
+contact[1].message = "test"
+"test"
+contact
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: continent: "EUROPE"date: "2019-06-20"email: "x"fullname: "ee"message: "my  msg"__proto__: Objectlength: 2__proto__: Array(0)
+contact.find(i=>i.fullnname == 'ee')
+undefined
+contact.find(i=>i.fullname == 'ee')
+{fullname: "ee", email: "x", continent: "EUROPE", message: "test", date: "2019-06-20"}
+contact.find(i=>i.fullname == 'ee').message='my  msg';
+"my  msg"
+contact
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "my  msg", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact;
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "my  msg", date: "2019-06-20"}length: 2__proto__: Array(0)
+contact.find(i=>i.fullname=='ee').message='hello';
+"hello"
+contact;
+(2) [{…}, {…}]0: {fullname: "dd", email: "w", continent: "EUROPE", message: "asdf", date: "2019-06-20"}1: {fullname: "ee", email: "x", continent: "EUROPE", message: "hello", date: "2019-06-20"}length: 2__proto__: Array(0)
